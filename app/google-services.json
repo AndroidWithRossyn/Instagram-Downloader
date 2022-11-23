@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "738725280337",
+    "project_id": "ininsta-a125e",
+    "storage_bucket": "ininsta-a125e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738725280337:android:19a3ca62d52e1636275670",
+        "android_client_info": {
+          "package_name": "com.banrossyn.ininsta.story.downloader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738725280337-cte4tbeio67c0ika226dujd4se26fnuj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSFqC8Za0ga1dAUBYWMLMQJkKMunQa2t8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738725280337-cte4tbeio67c0ika226dujd4se26fnuj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

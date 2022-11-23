@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayoutOpen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/homeview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:visibility="visible">
+
+
+            <include layout="@layout/home_view_layout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/storiesview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/stories_view_layout" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/helpview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <include layout="@layout/how_to_download" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/downloads_files_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/frameLayoutGallery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/settingview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <include layout="@layout/about_view_layout" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/relativeLayoutOpen"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/green_bg_light" />
+
+        <com.gauravk.bubblenavigation.BubbleNavigationConstraintView
+            android:id="@+id/top_navigation_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:visibility="visible"
+            app:bnc_mode="spread">
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/action_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_colorActive="@color/colorActive"
+                app:bt_colorInactive="@color/colorInActive"
+                app:bt_icon="@drawable/ic_instagram"
+                app:bt_iconHeight="30dp"
+                app:bt_iconWidth="30dp"
+                app:bt_shape="@drawable/background_card_download"
+                app:bt_title="@string/home"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/action_stories"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/action_stories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_colorActive="@color/colorActive"
+                app:bt_colorInactive="@color/colorInActive"
+                app:bt_icon="@drawable/ic_stories"
+                app:bt_iconHeight="30dp"
+                app:bt_iconWidth="30dp"
+                app:bt_shape="@drawable/background_card_download"
+                app:bt_title="@string/stories"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/action_account"
+                app:layout_constraintStart_toEndOf="@+id/action_link"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/action_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_colorActive="@color/colorActive"
+                app:bt_colorInactive="@color/colorInActive"
+                app:bt_icon="@drawable/help_icon"
+                app:bt_iconHeight="30dp"
+                app:bt_iconWidth="30dp"
+                app:bt_shape="@drawable/background_card_download"
+                app:bt_title="@string/help"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/action_gallery"
+                app:layout_constraintStart_toEndOf="@+id/action_stories"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/action_gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_colorActive="@color/colorActive"
+                app:bt_colorInactive="@color/colorInActive"
+                app:bt_icon="@drawable/ic_round_download"
+                app:bt_iconHeight="30dp"
+                app:bt_iconWidth="30dp"
+                app:bt_shape="@drawable/background_card_download"
+                app:bt_title="@string/download"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/action_help"
+                app:layout_constraintStart_toEndOf="@+id/action_account"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.gauravk.bubblenavigation.BubbleToggleView
+                android:id="@+id/action_help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bt_colorActive="@color/colorActive"
+                app:bt_colorInactive="@color/colorInActive"
+                app:bt_icon="@drawable/ic_round_settings"
+                app:bt_iconHeight="30dp"
+                app:bt_iconWidth="30dp"
+                app:bt_shape="@drawable/background_card_download"
+                app:bt_title="@string/settings"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/action_gallery"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </com.gauravk.bubblenavigation.BubbleNavigationConstraintView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/green_bg_light" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

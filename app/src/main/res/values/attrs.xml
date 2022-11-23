@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="backgroundColor" format="color"/>
+    <attr name="textColor" format="color"/>
+    <attr name="tintColor" format="color"/>
+    <attr name="lightColor" format="color"/>
+    <attr name="cardBackgroundColor" format="color"/>
+    <attr name="cardItemColor" format="color"/>
+    <attr name="textGray" format="color"/>
+    <attr name="lineColor" format="color"/>
+    <attr name="textEditBackground" format="color"/>
+</resources>

@@ -1,0 +1,114 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.InInsta" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+
+<!--        <item name="android:textColorPrimary">@color/white</item>-->
+<!--        <item name="android:windowBackground">@color/white</item>-->
+
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+<!--        <item name="android:navigationBarColor" >@color/blues</item>-->
+        <item name="android:statusBarColor" >@color/blues</item>
+        <item name="android:fontFamily">@font/baloo</item>
+
+
+    </style>
+
+<!--    <style name="Theme.InInsta.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+
+<!--    <style name="Theme.InInsta.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+<!--    <style name="toolbar" parent="@style/Base.TextAppearance.AppCompat.Title">-->
+<!--        <item name="android:textSize">16sp</item>-->
+<!--    </style>-->
+
+<!--    <style name="Theme.InInsta.AdAttribution">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:layout_gravity">left</item>-->
+<!--        <item name="android:textColor">#FFFFFF</item>-->
+<!--        <item name="android:textSize">10sp</item>-->
+<!--        <item name="android:text">@string/ad_attribution</item>-->
+<!--        <item name="android:background">#FFAA00</item>-->
+<!--        <item name="android:width">15dp</item>-->
+<!--        <item name="android:height">15dp</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppThem.NoActionBar" parent="Theme.AppCompat.NoActionBar">-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--        <item name="android:windowDisablePreview">true</item>-->
+<!--        <item name="android:windowIsTranslucent">false</item>-->
+<!--        <item name="android:splitMotionEvents">false</item>-->
+<!--        <item name="android:windowEnableSplitTouch">false</item>-->
+<!--        <item name="android:statusBarColor">@color/mainColor</item>-->
+<!--        <item name="backgroundColor">@color/backgroundColor_light</item>-->
+<!--        <item name="textEditBackground">@color/textEditBackground_light</item>-->
+<!--        <item name="textColor">@color/textColor_light</item>-->
+<!--        <item name="tintColor">@color/tintColor_light</item>-->
+<!--        <item name="lightColor">@color/lightColor_light</item>-->
+<!--        <item name="cardBackgroundColor">@color/cardBackgroundColor_light</item>-->
+<!--        <item name="textGray">@color/textGray_light</item>-->
+<!--        <item name="lineColor">@color/lineColor_light</item>-->
+<!--        <item name="cardItemColor">@color/cardItemColor_light</item>-->
+
+<!--    </style>-->
+<!--    <style name="Theme.InInstaDark" parent="Theme.AppCompat.NoActionBar">-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--        <item name="android:windowDisablePreview">true</item>-->
+<!--        <item name="android:windowIsTranslucent">false</item>-->
+<!--        <item name="android:splitMotionEvents">false</item>-->
+<!--        <item name="android:windowFullscreen">true</item>-->
+<!--        <item name="android:windowEnableSplitTouch">false</item>-->
+<!--        <item name="android:statusBarColor">@color/backgroundColor_dark</item>-->
+<!--        <item name="backgroundColor">@color/backgroundColor_light</item>-->
+<!--        <item name="textEditBackground">@color/textEditBackground_light</item>-->
+<!--        <item name="textColor">@color/textColor_light</item>-->
+<!--        <item name="tintColor">@color/tintColor_light</item>-->
+<!--        <item name="lightColor">@color/lightColor_light</item>-->
+<!--        <item name="cardBackgroundColor">@color/cardBackgroundColor_light</item>-->
+<!--        <item name="textGray">@color/textGray_light</item>-->
+<!--        <item name="lineColor">@color/lineColor_light</item>-->
+<!--        <item name="cardItemColor">@color/cardItemColor_light</item>-->
+
+<!--    </style>-->
+
+<!--    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">-->
+<!--        <item name="android:textSize">17sp</item>-->
+<!--        <item name="android:textStyle">bold</item>-->
+
+<!--    </style>-->
+
+<!--    <style name="UploadDialog" parent="@android:style/Theme.Dialog">-->
+<!--        <item name="android:windowBackground">@color/transparent</item>-->
+<!--        <item name="android:statusBarColor">@color/mainColor</item>-->
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--        <item name="android:windowIsFloating">false</item>-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">match_parent</item>-->
+<!--        <item name="android:windowFullscreen">false</item>-->
+<!--    </style>-->
+
+<!--    <style name="SCBSwitch" parent="Theme.AppCompat.Light">-->
+<!--        <item name="colorControlActivated">@color/mainColor</item>-->
+<!--        <item name="colorSwitchThumbNormal">#ffffff</item>-->
+<!--        <item name="colorAccent">#ffffff</item>-->
+<!--        <item name="android:colorForeground">@color/mainColor</item>-->
+<!--    </style>-->
+
+<!--    <style name="SheetDialog" parent="Theme.Design.Light.BottomSheetDialog">-->
+<!--        <item name="android:windowIsTranslucent">true</item>-->
+<!--        <item name="android:windowContentOverlay">@null</item>-->
+<!--        <item name="android:colorBackground">@android:color/transparent</item>-->
+<!--        <item name="android:backgroundDimEnabled">true</item>-->
+<!--        <item name="android:backgroundDimAmount">0.5</item>-->
+<!--        <item name="android:windowFrame">@null</item>-->
+<!--        <item name="android:windowIsFloating">true</item>-->
+<!--    </style>-->
+
+
+</resources>

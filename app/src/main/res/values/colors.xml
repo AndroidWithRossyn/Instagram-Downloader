@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorActive">#E6566FD1</color>
+<!--    <color name="colorInActive">#302F2F</color>-->
+    <color name="colorInActive">#BF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blues">#d7d1f5</color>
+    <color name="bluesnormal">#E5E2F3</color>
+    <color name="fb">#566fd1</color>
+
+    <color name="black">#000000</color>
+    <color name="views">#9F000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="background">#68a0b0</color>
+    <color name="paste_color">#DA68A0B0</color>
+    <color name="menu_shape">#927FCEE4</color>
+    <color name="download_color_tint">#d7d1f5</color>
+
+    <color name="colorPrimary">#9874a7</color>
+    <color name="colorPrimaryDark">#E1306C</color>
+    <color name="colorAccent">#A9E1306C</color>
+
+
+    <color name="blue_bg_light">#e8eaf6</color>
+    <color name="red_bg_light">#312c2d</color>
+    <color name="yellow_bg_light">#31302c</color>
+    <color name="pink_bg_light">#312c2e</color>
+    <color name="orange_bg_light">#312e2c</color>
+    <color name="pruple_bg_light">#2f2c31</color>
+    <color name="green_bg_light">#552c312c</color>
+
+    <!--Options Color-->
+    <color name="mainColor">#A9E1306C</color>
+    <color name="menuColor">#CEE1306C</color>
+    <color name="statusBarColor">#95E1306C</color>
+    <color name="pasteColor">#E1306C</color>
+
+    <!--Light Theme-->
+    <color name="backgroundColor_light">#F8F8F8</color>
+    <color name="textEditBackground_light">#F4F4F4</color>
+    <color name="textColor_light">#000000</color>
+    <color name="tintColor_light">#000000</color>
+    <color name="lightColor_light">#FFFFFF</color>
+    <color name="cardBackgroundColor_light">#FFFFFF</color>
+    <color name="textGray_light">#333333</color>
+    <color name="lineColor_light">#656565</color>
+    <color name="cardItemColor_light">#F1F1F1</color>
+
+    <!--Dark Theme-->
+    <color name="cardBackgroundColor_dark">#1E1E1E</color>
+    <color name="backgroundColor_dark">#191919</color>
+    <color name="textEditBackground_dark">#0E0E0E</color>
+    <color name="textColor_dark">#FFFFFF</color>
+    <color name="tintColor_dark">#FFFFFF</color>
+    <color name="lineColor_dark">#353535</color>
+    <color name="cardItemColor_dark">#80252525</color>
+    <color name="lightColor_dark">#151515</color>
+    <color name="textGray_dark">#CCCCCC</color>
+
+</resources>
