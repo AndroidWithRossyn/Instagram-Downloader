@@ -38,7 +38,7 @@ Here’s a quick look at what Story Saver & Downloader- InInsta has to offers to
 .
 .
 
->Paid Source Code Available 560INR
+>Paid Source Code Available 19USD
 
 <p align="center">
     <a href="https://play.google.com/store/apps/details?id=com.banrossyn.post.story.downloader">
