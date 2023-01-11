@@ -1,11 +1,16 @@
 <p align="center">
-  <h1 align="center">Instagram Downlaoder</h1>
+  <h1 align="center">Instagram Downloader</h1>
   
 InInsta helps you save Video, Photo, Storys, reels and Highlight from Instagram
 
-- ⚡  If You want to join us than message on <a href="banrossyn@gmail.com">Mail</a>
-&
-<a href="https://t.me/banrossyn">Telegram</a>. 
+- 👨‍💻 All of my projects are available at [Playstore](https://play.google.com/store/apps/dev?id=5306067645342206751)
+
+- 📝 Articles at [Blog](https://banrossyn.blogspot.com/)
+
+- 💬 **JAVA & KOTLIN**
+
+- *We provide reskin service of java android code at very low cost*
+- ⚡  If You want to join us than message on <a href="https://wa.me/+919694260426/">Whatsapp</a> , <a href="https://t.me/banrossyn">Telegram</a>  & <a href="banrossyn@gmail.com">Mail</a>.
 
 > Note: `-- Apache License 2.0` you can't Publish any Source code without permission.
 # 
@@ -151,7 +156,7 @@ All Post types are Supported. You can view and save many things such as IGTV, Re
 <li>InStory : Post &amp; Story Saver</li>
 </ul>
   
-<a href="https://play.google.com/store/apps/details?id=com.banrossyn.storydownloader"><img src="https://play-lh.googleusercontent.com/DjcK-Pc16a_i6cvk2snjyHyT2twaIA3iqOIqBxX0uUwY09hvxb-0k6w02ufoY8Clxg=w2560-h1440" /></a></td>
+<a href="https://play.google.com/store/apps/details?id=com.banrossyn.storydownloader"><img src="https://user-images.githubusercontent.com/118904953/207776555-89d638af-8b27-4483-9c2c-124c38b9da15.png" /></a></td>
 
 
 </tr>
@@ -217,6 +222,28 @@ All Post types are Supported. You can view and save many things such as IGTV, Re
 </tr>
 </tbody>
 
+
+
+<tbody>
+<tr>
+
+<td style="width: 50%; text-align: center;">
+<ul style="list-style-type: circle;">
+<li>Saver Lite: Post & Story Saver</li>
+</ul>
+<a href="https://play.google.com/store/apps/details?id=com.fotoric.storydownloader"><img src="https://play-lh.googleusercontent.com/aqjTuk3UImDlK-_FBCUPKr5eeYl9oeDkp-bZkTkOZHNMuTJARjyZfqKwhVt03Nu8MzI=w416-h235"/></a></td>
+
+
+
+<td style="width: 50%; text-align: center;">
+<ul style="list-style-type: circle;">
+<li>InsSaver</li>
+</ul>
+<a href="https://play.google.com/store/apps/details?id=com.fotoric.photo.video.downloader"><img src="https://play-lh.googleusercontent.com/gz8GF9M16qahsYOOwBH4LqMBK6xx9-vnT4xOP1vEq2Ug-gtJQmukuX0rrD_YEGjjSIU=w416-h235"/></a></td>
+
+
+</tr>
+</tbody>
 </table>
   
 
