@@ -43,27 +43,30 @@ Here’s a quick look at what Story Saver & Downloader- InInsta has to offers to
 .
 .
 
->Paid Source Code Available 19USD
+# Source Code Available at Low Price.
+For any inquiry, app support or app customization contact us at
 
+–  banrossyn@gmail.com
+
+–  https://wa.me/+919694260426/
+
+–  https://t.me/banrossyn/
+
+
+## InSaver Instagram Downloader
 <p align="center">
     <a href="https://play.google.com/store/apps/details?id=com.banrossyn.post.story.downloader">
       <img src="https://user-images.githubusercontent.com/118904953/203554664-0d81f250-6127-48be-a632-135ab42dd1a8.png" width="1280" />
     </a>
   </p>
-<p align="center">
-    <a href="https://play.google.com/store/apps/details?id=com.banrossyn.post.story.downloader">
-      <img src="https://user-images.githubusercontent.com/118904953/203556484-c491adb2-cddc-414b-b7f7-6b55e4e2f006.png" width ="100" />
-    </a>
-      <a href="https://wa.me/+919694260426">
-      <img src="https://user-images.githubusercontent.com/118904953/203558166-f378dbf5-0677-4537-b43b-b4f9d5f58dab.png" width ="100" />
-    </a>
-     <a href="banrossyn@gmail.com">
-      <img src="https://user-images.githubusercontent.com/118904953/203559109-cae9680e-a035-4a3d-ab02-ecbe03997b9e.png" width ="100" />
-    </a>
-       <a href="https://t.me/banrossyn">
-      <img src="https://user-images.githubusercontent.com/118904953/203559125-f73d94b3-c636-4366-af15-516d15bcfc71.png" width ="100" />
+  
+## InstaGramzy-All-in-one-Instagram-toolkit-with-Followers-Analytics 
+ <p align="center">
+    <a href="https://github.com/OmaPrakash/InstaGramzy-All-in-one-Instagram-toolkit-with-Followers-Analytics/blob/main/app-debug.apk?raw=true">
+      <img src="https://user-images.githubusercontent.com/118904953/222895458-977963c5-b395-4423-ba93-9a7b1c156a3b.jpg" width="1280" />
     </a>
   </p>
+
 
 # InInsta Best Instagram Downloader:
 All Post types are Supported. You can view and save many things such as IGTV, Reels, Story, Highlight, Photos,Videos. When you wanna download videos from Instagram feeds and IGTV, story saver and video downloader for Instagram is the right choice. InSaver - Instagram story downloader is simple to use. Just copy the link or share it to the story saver app, and the video or photo will be auto-downloaded right away. Try story saver for Instagram right now!
