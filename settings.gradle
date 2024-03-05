@@ -1,9 +1,27 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
 dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
     repositories {
         google()
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
+        mavenCentral { url 'https://oss.jfrog.org/artifactory/oss-snapshot-local' }
+        mavenCentral { url 'https://jitpack.io' }
+        maven {
+            url 'https://android-sdk.is.com/'
+        }
+        maven {
+            url "https://maven.google.com"
+        }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
 }
 rootProject.name = "InInsta"

@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.banrossyn.ininsta.story.downloader.R;
-import com.banrossyn.ininsta.story.downloader.activities.VideoPlayerActivity;
+import com.banrossyn.ininsta.story.downloader.VideoPlayerActivity;
 import com.banrossyn.ininsta.story.downloader.listener.FileClickInterface;
 
 import java.io.File;

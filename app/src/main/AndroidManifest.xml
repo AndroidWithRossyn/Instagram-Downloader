@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
 
     <application
+        android:name=".api.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -20,77 +21,32 @@
         android:theme="@style/Theme.InInsta"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
+
         <activity
-            android:name=".activities.SplashActivity"
+            android:name=".SplashActivity"
             android:exported="true"
-            android:theme="@style/Theme.InInsta.splace"
-            android:screenOrientation="portrait">
+            android:theme="@style/Theme.InInsta.splace">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
 
         <activity
-            android:name=".activities.MainActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
-            android:exported="true">
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
-
                 <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:mimeType="image/*" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.SEND" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-
                 <data android:mimeType="text/plain" />
             </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.SEND_MULTIPLE" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:mimeType="image/*" />
-            </intent-filter>
         </activity>
-        <activity
-            android:name=".activities.LoginActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activities.VideoPlayerActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activities.StoriesFullViewActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activities.PreviewActivity"
-            android:screenOrientation="portrait" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".VideoPlayerActivity" />
+        <activity android:name=".StoriesFullViewActivity" />
+        <activity android:name=".PreviewActivity" />
 
-        <service
-            android:name=".firebase.FireBaseNotification"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
-        
-        <meta-data
-            android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/admob_app_id" />
-        <meta-data
-            android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@mipmap/ic_launcher_round" />
-        <meta-data
-            android:name="com.google.firebase.messaging.default_notification_color"
-            android:resource="@color/mainColor" />
     </application>
-
 </manifest>

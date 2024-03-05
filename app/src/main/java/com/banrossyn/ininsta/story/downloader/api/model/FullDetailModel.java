@@ -2,26 +2,18 @@ package com.banrossyn.ininsta.story.downloader.api.model;
 
 import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class FullDetailModel implements Serializable {
-    @SerializedName("reel_feed")
-    private ReelFeedModel reelFeed;
-    @SerializedName("user_detail")
-    private UserDetailModel userDetail;
 
-    public UserDetailModel getUserDetail() {
-        return this.userDetail;
+    @SerializedName("reels_media")
+    private ArrayList<ReelFeedModel> reels_media;
+
+    public ArrayList<ReelFeedModel> getReels_media() {
+        return reels_media;
     }
 
-    public void setUserDetail(UserDetailModel userDetailModel) {
-        this.userDetail = userDetailModel;
-    }
-
-    public ReelFeedModel getReelFeed() {
-        return this.reelFeed;
-    }
-
-    public void setReelFeed(ReelFeedModel reelFeedModel) {
-        this.reelFeed = reelFeedModel;
+    public void setReels_media(ArrayList<ReelFeedModel> reels_media) {
+        this.reels_media = reels_media;
     }
 }

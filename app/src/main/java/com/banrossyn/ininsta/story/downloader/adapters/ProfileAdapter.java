@@ -41,7 +41,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.ViewHold
         viewHolder.textViewName.setText(this.trayModelArrayList.get(i).getUser().getFullname());
         Glide.with(this.context).load(this.trayModelArrayList.get(i).getUser().getProfilepicurl()).thumbnail(0.2f).into(viewHolder.imageViewCover);
         viewHolder.relativeLayoutContent.setOnClickListener(new View.OnClickListener() {
-            public final void onClick(View view) {
+            public void onClick(View view) {
                 userListInterface.FacebookUserListClick(i, trayModelArrayList.get(i));
             }
         });

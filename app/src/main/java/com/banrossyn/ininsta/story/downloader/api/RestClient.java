@@ -3,6 +3,7 @@ package com.banrossyn.ininsta.story.downloader.api;
 import android.app.Activity;
 
 import com.google.gson.Gson;
+
 import org.json.JSONObject;
 
 import java.io.IOException;
@@ -35,13 +36,16 @@ public class RestClient {
         OkHttpClient build = new OkHttpClient.Builder().readTimeout(2, TimeUnit.MINUTES).connectTimeout(2, TimeUnit.MINUTES).writeTimeout(2, TimeUnit.MINUTES).addInterceptor(new Interceptor() {
 
             @Override
-            public final Response intercept(Chain chain) throws IOException{
+            public Response intercept(Chain chain) throws IOException {
                 Response response = null;
                 try {
                     response = chain.proceed(chain.request());
                     if (response.code() == 200) {
                         try {
-                            return response.newBuilder().body(ResponseBody.create(response.body().contentType(), new JSONObject(response.body().string()).toString())).build();
+                            return response
+                                    .newBuilder()
+                                    .body(ResponseBody.create(response.body().contentType(), new JSONObject(response.body().string()).toString()))
+                                    .build();
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -53,7 +57,12 @@ public class RestClient {
             }
         }).addInterceptor(httpLoggingInterceptor).build();
         if (retrofit == null) {
-            retrofit = new Retrofit.Builder().baseUrl("https://www.instagram.com/").addConverterFactory(GsonConverterFactory.create(new Gson())).addCallAdapterFactory(RxJava2CallAdapterFactory.create()).client(build).build();
+            retrofit = new Retrofit.Builder()
+                    .baseUrl("https://www.instagram.com/")
+                    .addConverterFactory(GsonConverterFactory.create(new Gson()))
+                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                    .client(build)
+                    .build();
         }
     }
 

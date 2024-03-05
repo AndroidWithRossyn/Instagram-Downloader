@@ -1,20 +1,13 @@
 <resources>
     <string name="app_name">InInsta</string>
 
-    <!--AdMob Ads-->
-    <string name="admob_app_id" translatable="false">ca-app-pub-4577382853353362~8158259293</string>
-    <string name="admob_banner_id" translatable="false">ca-app-pub-4577382853353362/1421282949</string>
-    <string name="admob_inter_id" translatable="false">ca-app-pub-4577382853353362/1401279257</string>
-    <string name="admob_Native_id" translatable="false">ca-app-pub-4577382853353362/7991652035</string>
-
-
-
     <!-- Email, Privacy, Developer Account -->
     <string name="email_feedback">banrossyn@gmail.com</string>
-    <string name="policy_url">https://banrossyn.blogspot.com/2022/01/InInsta.html</string>
+    <string name="policy_url">https://androidwithrossyn.github.io/InstagramDownloader/privacy%20policy.html</string>
     <string name="developer">Ban Rossyn</string>
-    <string name="developer_account_link">https://play.google.com/store/apps/dev?id=5306067645342206751</string>
-
+    <string name="developer_account_link">https://github.com/AndroidWithRossyn</string>
+    <string name="source_code">https://github.com/AndroidWithRossyn/Instagram-Downloader</string>
+    <string name="paid_apk">https://github.com/AndroidWithRossyn/InstagramDownloader</string>
 
     <string name="download_file">File Name :</string>
     <string name="download_title">Do you want to download?</string>
@@ -75,4 +68,6 @@
 
     <string name="ad_attribution">Ad</string>
     <string name="login_with_instagram">Must Login With Instagram</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

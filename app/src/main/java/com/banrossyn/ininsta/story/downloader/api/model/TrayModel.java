@@ -1,6 +1,6 @@
 package com.banrossyn.ininsta.story.downloader.api.model;
 
-import com.google.firebase.analytics.FirebaseAnalytics;
+
 import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
 public class TrayModel implements Serializable {
     @SerializedName("id")
     private String id;
-    @SerializedName(FirebaseAnalytics.Param.ITEMS)
+    @SerializedName("items")
     private List<ItemModel> items;
     @SerializedName("media_count")
     private int mediacount;

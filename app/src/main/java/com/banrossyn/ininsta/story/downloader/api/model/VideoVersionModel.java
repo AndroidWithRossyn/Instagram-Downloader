@@ -1,6 +1,5 @@
 package com.banrossyn.ininsta.story.downloader.api.model;
 
-import com.google.android.gms.common.internal.ImagesContract;
 import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
@@ -11,7 +10,7 @@ public class VideoVersionModel implements Serializable {
     private String id;
     @SerializedName("type")
     private int type;
-    @SerializedName(ImagesContract.URL)
+    @SerializedName("url")
     private String url;
     @SerializedName("width")
     private int width;

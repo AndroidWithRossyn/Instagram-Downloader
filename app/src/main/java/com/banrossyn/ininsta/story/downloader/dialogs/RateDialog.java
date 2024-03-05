@@ -65,49 +65,46 @@ public class RateDialog extends Dialog implements View.OnClickListener {
     public void onClick(View view) {
         int id = view.getId();
         if (id != R.id.text_view_submit) {
-            switch (id) {
-                case R.id.image_view_star_1:
-                    this.star_number = 1;
-                    this.imageViewRate.setImageResource(R.drawable.rate_1);
-                    this.textViewTitle.setText(getContext().getResources().getString(R.string.rating_title_1));
-                    this.textViewTitle.setVisibility(View.VISIBLE);
-                    this.textViewDesc.setText(getContext().getResources().getString(R.string.rating_text_1));
-                    setStarBar();
-                    return;
-                case R.id.image_view_star_2:
-                    this.star_number = 2;
-                    this.imageViewRate.setImageResource(R.drawable.rate_2);
-                    this.textViewTitle.setText(getContext().getResources().getString(R.string.rating_title_1));
-                    this.textViewTitle.setVisibility(View.VISIBLE);
-                    this.textViewDesc.setText(getContext().getResources().getString(R.string.rating_text_1));
-                    setStarBar();
-                    return;
-                case R.id.image_view_star_3:
-                    this.star_number = 3;
-                    this.imageViewRate.setImageResource(R.drawable.rate_3);
-                    this.textViewTitle.setText(getContext().getResources().getString(R.string.rating_title_1));
-                    this.textViewTitle.setVisibility(View.VISIBLE);
-                    this.textViewDesc.setText(getContext().getResources().getString(R.string.rating_text_1));
-                    setStarBar();
-                    return;
-                case R.id.image_view_star_4:
-                    this.star_number = 4;
-                    this.imageViewRate.setImageResource(R.drawable.rate_4);
-                    this.textViewTitle.setText(getContext().getResources().getString(R.string.rating_title_2));
-                    this.textViewTitle.setVisibility(View.VISIBLE);
-                    this.textViewDesc.setText(getContext().getResources().getString(R.string.rating_text_4));
-                    setStarBar();
-                    return;
-                case R.id.image_view_star_5:
-                    this.star_number = 5;
-                    this.imageViewRate.setImageResource(R.drawable.rate_5);
-                    this.textViewTitle.setText(getContext().getResources().getString(R.string.rating_title_2));
-                    this.textViewTitle.setVisibility(View.VISIBLE);
-                    this.textViewDesc.setText(getContext().getResources().getString(R.string.rating_text_4));
-                    setStarBar();
-                    return;
-                default:
-
+            if (id == R.id.image_view_star_1) {
+                this.star_number = 1;
+                this.imageViewRate.setImageResource(R.drawable.rate_1);
+                this.textViewTitle.setText(getContext().getResources().getString(R.string.rating_title_1));
+                this.textViewTitle.setVisibility(View.VISIBLE);
+                this.textViewDesc.setText(getContext().getResources().getString(R.string.rating_text_1));
+                setStarBar();
+                return;
+            } else if (id == R.id.image_view_star_2) {
+                this.star_number = 2;
+                this.imageViewRate.setImageResource(R.drawable.rate_2);
+                this.textViewTitle.setText(getContext().getResources().getString(R.string.rating_title_1));
+                this.textViewTitle.setVisibility(View.VISIBLE);
+                this.textViewDesc.setText(getContext().getResources().getString(R.string.rating_text_1));
+                setStarBar();
+                return;
+            } else if (id == R.id.image_view_star_3) {
+                this.star_number = 3;
+                this.imageViewRate.setImageResource(R.drawable.rate_3);
+                this.textViewTitle.setText(getContext().getResources().getString(R.string.rating_title_1));
+                this.textViewTitle.setVisibility(View.VISIBLE);
+                this.textViewDesc.setText(getContext().getResources().getString(R.string.rating_text_1));
+                setStarBar();
+                return;
+            } else if (id == R.id.image_view_star_4) {
+                this.star_number = 4;
+                this.imageViewRate.setImageResource(R.drawable.rate_4);
+                this.textViewTitle.setText(getContext().getResources().getString(R.string.rating_title_2));
+                this.textViewTitle.setVisibility(View.VISIBLE);
+                this.textViewDesc.setText(getContext().getResources().getString(R.string.rating_text_4));
+                setStarBar();
+                return;
+            } else if (id == R.id.image_view_star_5) {
+                this.star_number = 5;
+                this.imageViewRate.setImageResource(R.drawable.rate_5);
+                this.textViewTitle.setText(getContext().getResources().getString(R.string.rating_title_2));
+                this.textViewTitle.setVisibility(View.VISIBLE);
+                this.textViewDesc.setText(getContext().getResources().getString(R.string.rating_text_4));
+                setStarBar();
+                return;
             }
         } else if (this.star_number >= 4) {
             this.activity.startActivity(new Intent("android.intent.action.VIEW", Uri.parse("https://play.google.com/store/apps/details?id=com.banrossyn.post.story.downloader")));

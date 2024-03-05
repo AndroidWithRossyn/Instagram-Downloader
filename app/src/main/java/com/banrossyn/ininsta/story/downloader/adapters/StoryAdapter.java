@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.banrossyn.ininsta.story.downloader.R;
-import com.banrossyn.ininsta.story.downloader.activities.StoriesFullViewActivity;
-import com.banrossyn.ininsta.story.downloader.activities.VideoPlayerActivity;
+import com.banrossyn.ininsta.story.downloader.StoriesFullViewActivity;
+import com.banrossyn.ininsta.story.downloader.VideoPlayerActivity;
 import com.banrossyn.ininsta.story.downloader.api.model.ItemModel;
 import com.banrossyn.ininsta.story.downloader.utils.DirectoryUtils;
 import com.banrossyn.ininsta.story.downloader.utils.Utils;

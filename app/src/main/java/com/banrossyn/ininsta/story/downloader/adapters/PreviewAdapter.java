@@ -11,8 +11,8 @@ import android.widget.ImageView;
 import androidx.viewpager.widget.PagerAdapter;
 import com.bumptech.glide.Glide;
 import com.banrossyn.ininsta.story.downloader.R;
-import com.banrossyn.ininsta.story.downloader.activities.PreviewActivity;
-import com.banrossyn.ininsta.story.downloader.activities.VideoPlayerActivity;
+import com.banrossyn.ininsta.story.downloader.PreviewActivity;
+import com.banrossyn.ininsta.story.downloader.VideoPlayerActivity;
 
 import org.jetbrains.annotations.NotNull;
 import java.io.File;

@@ -1,52 +1,49 @@
 plugins {
     id 'com.android.application'
-    id 'com.google.gms.google-services'
-//    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
 }
 
 android {
-    compileSdk 31
+    namespace "com.banrossyn.ininsta.story.downloader"
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.banrossyn.ininsta.story.downloader"
         minSdk 21
-        targetSdk 31
-        versionCode 4
-        versionName "1.5.2"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
         setProperty("archivesBaseName", "InInsta")
-        ndk {
-            abiFilters 'armeabi-v7a'
-            abiFilters 'arm64-v8a'
-            abiFilters 'x86'
-        }
+        vectorDrawables.useSupportLibrary true
+        renderscriptSupportModeEnabled true
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
     }
     sourceSets {
         main {
             jniLibs.srcDirs = ['libs']
         }
     }
-    // should be remove
-//    dexOptions {
-//        javaMaxHeapSize "4g"
-//    }
-
+    buildFeatures {
+        viewBinding true
+//        dataBinding true
+        buildConfig true
+    }
     lintOptions {
         checkReleaseBuilds false
         abortOnError false
     }
-//    repositories {
-//        flatDir {
-//            dirs 'libs'
-//        }
-//    }
     buildTypes {
         release {
             minifyEnabled false
+            shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
-
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -56,12 +53,12 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.5.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
-    testImplementation 'junit:junit:4.+'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -75,19 +72,13 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
     implementation 'io.reactivex.rxjava2:rxjava:2.2.19'
 
-    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
 
     //implementation 'com.anjlab.android.iab.v3:library:1.1.0'
     implementation 'com.github.florent37:shapeofview:1.3.2'
     implementation 'com.amitshekhar.android:android-networking:1.0.2'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'com.gauravk.bubblenavigation:bubblenavigation:1.0.7'
-
-    implementation 'com.google.android.play:core:1.10.3'
-    implementation 'com.google.android.gms:play-services-ads:20.5.0'
-    implementation 'com.google.firebase:firebase-analytics:20.0.2'
-    implementation 'com.google.firebase:firebase-messaging:23.0.0'
-//    implementation 'com.onesignal:OneSignal:4.2.0'
 
     implementation 'com.airbnb.android:lottie:4.2.2'
 }
