@@ -248,6 +248,7 @@ public class VideoControllerView extends FrameLayout {
         return this.mRoot;
     }
 
+
     private void initControllerView(View view) {
         ImageView imageView = (ImageView) view.findViewById(R.id.pause);
         this.mPauseButton = imageView;
