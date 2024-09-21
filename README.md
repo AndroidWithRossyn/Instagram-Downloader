@@ -9,10 +9,6 @@
 ![Stars](https://img.shields.io/github/stars/AndroidWithRossyn/Instagram-Downloader)
 ![GitHub last commit](https://img.shields.io/github/last-commit/AndroidWithRossyn/Instagram-Downloader)
 ![pv](https://pageview.vercel.app/?github_user=Instagram-Downloader)
-<a href="https://t.me/banrossyn" target="_blank"><img src="https://img.shields.io/badge/Telegram-%40banrossyn-28a8ea"></a>
-<a href="https://wa.me/+919694260426/" target="_blank"><img src="https://img.shields.io/badge/whatsapp-%40+919694260426-28a8ea"></a>
-<a href="https://www.linkedin.com/in/banrossyn/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-banrossyn-informational"></a>
-<a href="mailto:banrossyn@gmail.com"><img src="https://img.shields.io/badge/Email-banrossyn%40gmail.com-blue"></a>
 
 </div>
 
@@ -84,7 +80,7 @@ Also, [follow me on GitHub](https://github.com/AndroidWithRossyn/) for my next c
 - **Play Store Ready**: We ensure your reskinned app meets Google Play Store guidelines and is ready for publishing.
 
 <p align="center">
-    <a href="mailto:banrossyn@gmail.com">
+    <a href="">
       <img src="https://github.com/user-attachments/assets/fbb22238-b781-4e21-baae-bfde58d8a37e" width = "1000" />
     </a>
 </p>
