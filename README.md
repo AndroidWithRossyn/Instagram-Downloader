@@ -79,11 +79,7 @@ Also, [follow me on GitHub](https://github.com/AndroidWithRossyn/) for my next c
 - **Quick Turnaround**: Fast and efficient reskinning service to get your app ready for launch in no time.
 - **Play Store Ready**: We ensure your reskinned app meets Google Play Store guidelines and is ready for publishing.
 
-<p align="center">
-    <a href="">
-      <img src="https://github.com/user-attachments/assets/fbb22238-b781-4e21-baae-bfde58d8a37e" width = "1000" />
-    </a>
-</p>
+
 
 
 
