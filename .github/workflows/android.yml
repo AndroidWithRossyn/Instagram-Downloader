@@ -1,0 +1,54 @@
+name: Android CI
+
+on:
+  push:
+    branches:
+      - main  # Trigger workflow on push to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger workflow on pull requests to the main branch
+
+jobs:
+  build:
+    name: Build and Test Android Project
+    runs-on: ubuntu-latest  # Run on the latest version of Ubuntu
+    strategy:
+      matrix:
+        api-level: [34]  # Using Android API level 34 (targetSdk 34)
+        target: [default]  # Emulator target (can be customized as per need)
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # Checks out the repository code
+
+      - name: Set up JDK 1.8
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'zulu'  # Using the Zulu distribution of OpenJDK
+          java-version: '8'     # Set Java version to 1.8 (sourceCompatibility and targetCompatibility)
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v2
+        with:
+          api-level: ${{ matrix.api-level }}  # API level 34 for targetSdk
+          target: ${{ matrix.target }}
+          components: build-tools;34.0.0  # Add components (build-tools for API 34)
+
+      - name: Cache Gradle packages
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
+
+      - name: Build with Gradle
+        run: ./gradlew build  # Run the Gradle build task
+
+      - name: Run Unit Tests
+        run: ./gradlew test  # Run unit tests
+
+      - name: Run UI Tests on Emulator
+        run: ./gradlew connectedAndroidTest  # Run UI tests on an emulator
