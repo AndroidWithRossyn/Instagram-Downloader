@@ -38,6 +38,10 @@ public class StoryAdapter extends RecyclerView.Adapter<StoryAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
+
+        if (!storyItemModelList.isEmpty()){
+            return;
+        }
         final ItemModel itemModel = this.storyItemModelList.get(i);
         try {
             if (itemModel.getMediatype() == 2) {

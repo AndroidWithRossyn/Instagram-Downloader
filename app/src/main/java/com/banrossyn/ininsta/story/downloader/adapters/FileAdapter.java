@@ -3,6 +3,7 @@ package com.banrossyn.ininsta.story.downloader.adapters;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +27,7 @@ import java.util.Date;
 import java.util.List;
 
 public class FileAdapter extends RecyclerView.Adapter<FileAdapter.ViewHolder> {
+    private String TAG = "FileAdapter";
     public Context context;
     public List<File> fileArrayList;
     private DecimalFormat decimalFormat = new DecimalFormat("#.##");
@@ -34,7 +36,7 @@ public class FileAdapter extends RecyclerView.Adapter<FileAdapter.ViewHolder> {
     public FileAdapter(Context context, List<File> fileArrayList, FileClickInterface fileListClickInterface) {
         this.context = context;
         this.fileArrayList = fileArrayList;
-        this.fileListClickInterface=  fileListClickInterface;
+        this.fileListClickInterface = fileListClickInterface;
     }
 
     @NonNull
@@ -46,7 +48,7 @@ public class FileAdapter extends RecyclerView.Adapter<FileAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, @SuppressLint("RecyclerView") int i) {
         File fileItem = fileArrayList.get(i);
-        String format = new SimpleDateFormat("dd-MM-yyyy  hh:mm a").format(new Date(fileItem.lastModified()));
+        @SuppressLint("SimpleDateFormat") String format = new SimpleDateFormat("dd-MM-yyyy  hh:mm a").format(new Date(fileItem.lastModified()));
         viewHolder.textViewName.setText(fileArrayList.get(i).getName());
         viewHolder.textViewTime.setText(format);
 
@@ -58,13 +60,14 @@ public class FileAdapter extends RecyclerView.Adapter<FileAdapter.ViewHolder> {
                 viewHolder.imageViewPlay.setVisibility(View.GONE);
             }
             Glide.with(context).load(fileItem.getPath()).into(viewHolder.imageViewCover);
-        }catch (Exception ex){
+        } catch (Exception ex) {
+            Log.d(TAG, "onBindViewHolder: "+ex.getLocalizedMessage());
         }
 
         viewHolder.relativeLayoutContent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fileListClickInterface.getPosition(i,fileItem);
+                fileListClickInterface.getPosition(i, fileItem);
             }
         });
 

@@ -1,6 +1,6 @@
 <h1 align="center">Instagram Downloader</h1>
   
-<h4 align="center">InInsta helps you save Video, Photo, Storys, reels and Highlight from Instagram
+<h4 align="center">InInsta helps you save Video, Photo, Story's, reels and Highlight from Instagram
 </h4>
 
 
@@ -70,17 +70,6 @@ Also, [follow me on GitHub](https://github.com/AndroidWithRossyn/) for my next c
 - This application is NOT affiliated or endorsed by Instagram.
 - You should understand that the ownership, intellectual property rights, and any other interests of the Video, Photo, Instagram Story, Reels Video even Highlight on the platform belong to its publishers or owners. We respect such legitimate rights and interests of the publishers or the owners. We recommend you obtain permission before download and use the content, also, you shall indicate the source of the content when using the downloaded Video, Photo, Instagram Story, Reels Video even Highlight.
 - Any unauthorized reloading or downloading of content and/or violations of intellectual property. The rights are the sole responsibility of the user. and the user can Download and re upload and photo and videos.
-
-
-### Professional Reskinning Service!
-- **Custom Design**: We customize the app’s UI/UX to align with your brand identity, including colors, icons, fonts, and layouts.
-- **Feature Integration**: Add new features or modify existing ones to meet your specific needs and preferences.
-- **App Optimization**: Ensure your app looks great and performs optimally across all devices and screen sizes.
-- **Quick Turnaround**: Fast and efficient reskinning service to get your app ready for launch in no time.
-- **Play Store Ready**: We ensure your reskinned app meets Google Play Store guidelines and is ready for publishing.
-
-
-
 
 
 ### Copyright & License

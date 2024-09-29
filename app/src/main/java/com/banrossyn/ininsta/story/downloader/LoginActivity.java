@@ -8,7 +8,12 @@ import android.webkit.CookieSyncManager;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.banrossyn.ininsta.story.downloader.preference.SharePrefs;
 
@@ -22,7 +27,14 @@ public class LoginActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main_login), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+
         this.activity = this;
         webView = findViewById(R.id.webView);
 
@@ -37,6 +49,7 @@ public class LoginActivity extends AppCompatActivity{
         });
     }
 
+    @SuppressLint("SetJavaScriptEnabled")
     public void Login() {
         this.webView.getSettings().setJavaScriptEnabled(true);
         this.webView.clearCache(true);
@@ -46,11 +59,7 @@ public class LoginActivity extends AppCompatActivity{
         this.webView.loadUrl("https://www.instagram.com/accounts/login/");
         this.webView.setWebChromeClient(new WebChromeClient() {
             public void onProgressChanged(WebView webView, int i) {
-                if (i == 100) {
-                    swipeRefreshLayout.setRefreshing(false);
-                } else {
-                    swipeRefreshLayout.setRefreshing(true);
-                }
+                swipeRefreshLayout.setRefreshing(i != 100);
             }
         });
     }

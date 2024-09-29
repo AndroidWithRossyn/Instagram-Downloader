@@ -15,14 +15,17 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import com.banrossyn.ininsta.story.downloader.widget.VideoControllerView;
 
 import java.io.IOException;
 
-public class VideoPlayerActivity extends AppCompatActivity implements SurfaceHolder.Callback,
-        MediaPlayer.OnPreparedListener, VideoControllerView.MediaPlayerControl {
+public class VideoPlayerActivity extends AppCompatActivity implements SurfaceHolder.Callback, MediaPlayer.OnPreparedListener, VideoControllerView.MediaPlayerControl {
     private static boolean FullScreen = true;
     static MediaPlayer mediaPlayer;
     ImageView back;
@@ -59,7 +62,13 @@ public class VideoPlayerActivity extends AppCompatActivity implements SurfaceHol
 
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_player);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.video_container), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
         SurfaceView surfaceView = (SurfaceView) findViewById(R.id.videoSurface);
         this.surfaceView = surfaceView;
         surfaceView.getHolder().addCallback(this);

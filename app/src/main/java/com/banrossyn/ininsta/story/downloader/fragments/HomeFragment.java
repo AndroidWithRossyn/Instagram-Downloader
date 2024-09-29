@@ -255,7 +255,7 @@ public class HomeFragment extends Fragment {
 
     public String OrgCookies() {
         if (!Objects.equals(SharePrefs.getInstance(requireActivity()).getString(SharePrefs.COOKIES), "")) {
-            return SharePrefs.getInstance(requireActivity()).getString(SharePrefs.USERID);
+            return SharePrefs.getInstance(requireActivity()).getString(SharePrefs.COOKIES);
         } else {
             return getTempCookiesOld();
         }

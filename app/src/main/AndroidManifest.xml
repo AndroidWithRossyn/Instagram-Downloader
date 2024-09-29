@@ -21,25 +21,28 @@
         android:theme="@style/Theme.InInsta"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.InInsta.splace">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
@@ -47,6 +50,6 @@
         <activity android:name=".VideoPlayerActivity" />
         <activity android:name=".StoriesFullViewActivity" />
         <activity android:name=".PreviewActivity" />
-
     </application>
+
 </manifest>
