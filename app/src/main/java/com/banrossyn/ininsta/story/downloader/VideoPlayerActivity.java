@@ -26,6 +26,7 @@ import com.banrossyn.ininsta.story.downloader.widget.VideoControllerView;
 import java.io.IOException;
 
 public class VideoPlayerActivity extends AppCompatActivity implements SurfaceHolder.Callback, MediaPlayer.OnPreparedListener, VideoControllerView.MediaPlayerControl {
+
     private static boolean FullScreen = true;
     static MediaPlayer mediaPlayer;
     ImageView back;
