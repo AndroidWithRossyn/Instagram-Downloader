@@ -36,6 +36,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "InInsta"
-include(":app")
+//include(":app")
 include(":app-hilt")
-include(":bubblenavigation")
+//include(":bubblenavigation")

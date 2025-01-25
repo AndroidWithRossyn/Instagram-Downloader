@@ -10,9 +10,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/app-hilt" />
-            <option value="$PROJECT_DIR$/bubblenavigation" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />

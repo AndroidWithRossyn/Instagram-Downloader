@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.DefaultLifecycleObserver
 
-open class BaseActivity: AppCompatActivity(), DefaultLifecycleObserver  {
+abstract class BaseActivity: AppCompatActivity(), DefaultLifecycleObserver  {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super<AppCompatActivity>.onCreate(savedInstanceState)
@@ -15,4 +15,5 @@ open class BaseActivity: AppCompatActivity(), DefaultLifecycleObserver  {
         super<AppCompatActivity>.onDestroy()
         lifecycle.removeObserver(this)
     }
+
 }

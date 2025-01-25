@@ -8,6 +8,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.rossyn.instagram.reels.story.downloader.R
 
 class MainActivity : BaseActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -17,5 +18,8 @@ class MainActivity : BaseActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
     }
+
 }

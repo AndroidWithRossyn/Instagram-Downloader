@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="InInsta.app" target="21" />
+      <module name="InInsta.bubblenavigation" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
